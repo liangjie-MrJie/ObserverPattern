@@ -40,11 +40,11 @@
     [buff attackOn:@"提莫"];
     
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(action:) name:@"LJ" object:nil];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"LJ" object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(action:) name:@"ViewController+action" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewController+action" object:self];
  
-    [[LJNSNotificationCenter defaultCenter] addObserver:self selector:@selector(ljaction:) name:@"LJ" object:nil];
-    [[LJNSNotificationCenter defaultCenter] postNotificationName:@"LJ" object:self];
+    [[LJNSNotificationCenter defaultCenter] addObserver:self selector:@selector(ljaction:) name:@"ViewController+ljaction" object:nil];
+    [[LJNSNotificationCenter defaultCenter] postNotificationName:@"ViewController+ljaction" object:self];
 }
 
 - (void)action:(NSNotification *)notification {
