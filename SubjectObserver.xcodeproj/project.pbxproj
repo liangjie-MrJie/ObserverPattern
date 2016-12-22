@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC26202B1E08E12D00B578F0 /* BlueBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26202A1E08E12D00B578F0 /* BlueBuff.m */; };
+		DC26202F1E0916A300B578F0 /* Summoner1.m in Sources */ = {isa = PBXBuildFile; fileRef = DC26202E1E0916A300B578F0 /* Summoner1.m */; };
+		DC2620321E09178A00B578F0 /* NotifyDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2620311E09178A00B578F0 /* NotifyDataObject.m */; };
+		DC2620351E0918E100B578F0 /* Summoner2.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2620341E0918E100B578F0 /* Summoner2.m */; };
+		DC2620381E09194100B578F0 /* Summoner3.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2620371E09194100B578F0 /* Summoner3.m */; };
 		DCE5C48F1E08DEA500E203C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5C48E1E08DEA500E203C5 /* main.m */; };
 		DCE5C4921E08DEA500E203C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5C4911E08DEA500E203C5 /* AppDelegate.m */; };
 		DCE5C4951E08DEA500E203C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5C4941E08DEA500E203C5 /* ViewController.m */; };
@@ -16,6 +21,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC2620281E08DF3E00B578F0 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		DC2620291E08E12D00B578F0 /* BlueBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueBuff.h; sourceTree = "<group>"; };
+		DC26202A1E08E12D00B578F0 /* BlueBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueBuff.m; sourceTree = "<group>"; };
+		DC26202D1E0916A300B578F0 /* Summoner1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner1.h; sourceTree = "<group>"; };
+		DC26202E1E0916A300B578F0 /* Summoner1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summoner1.m; sourceTree = "<group>"; };
+		DC2620301E09178A00B578F0 /* NotifyDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyDataObject.h; sourceTree = "<group>"; };
+		DC2620311E09178A00B578F0 /* NotifyDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyDataObject.m; sourceTree = "<group>"; };
+		DC2620331E0918E100B578F0 /* Summoner2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner2.h; sourceTree = "<group>"; };
+		DC2620341E0918E100B578F0 /* Summoner2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summoner2.m; sourceTree = "<group>"; };
+		DC2620361E09194100B578F0 /* Summoner3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner3.h; sourceTree = "<group>"; };
+		DC2620371E09194100B578F0 /* Summoner3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summoner3.m; sourceTree = "<group>"; };
 		DCE5C48A1E08DEA500E203C5 /* SubjectObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubjectObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE5C48E1E08DEA500E203C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCE5C4901E08DEA500E203C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +42,7 @@
 		DCE5C4991E08DEA500E203C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCE5C49C1E08DEA500E203C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCE5C49E1E08DEA500E203C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE5C4A41E08DEE500E203C5 /* Subject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +59,18 @@
 		DCE5C4811E08DEA500E203C5 = {
 			isa = PBXGroup;
 			children = (
+				DC2620361E09194100B578F0 /* Summoner3.h */,
+				DC2620371E09194100B578F0 /* Summoner3.m */,
+				DC2620331E0918E100B578F0 /* Summoner2.h */,
+				DC2620341E0918E100B578F0 /* Summoner2.m */,
+				DC26202D1E0916A300B578F0 /* Summoner1.h */,
+				DC26202E1E0916A300B578F0 /* Summoner1.m */,
+				DC2620291E08E12D00B578F0 /* BlueBuff.h */,
+				DC26202A1E08E12D00B578F0 /* BlueBuff.m */,
+				DC2620301E09178A00B578F0 /* NotifyDataObject.h */,
+				DC2620311E09178A00B578F0 /* NotifyDataObject.m */,
+				DC2620281E08DF3E00B578F0 /* Observer.h */,
+				DCE5C4A41E08DEE500E203C5 /* Subject.h */,
 				DCE5C48C1E08DEA500E203C5 /* SubjectObserver */,
 				DCE5C48B1E08DEA500E203C5 /* Products */,
 			);
@@ -110,6 +139,7 @@
 				TargetAttributes = {
 					DCE5C4891E08DEA500E203C5 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 6DN7GZ678J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC26202B1E08E12D00B578F0 /* BlueBuff.m in Sources */,
 				DCE5C4951E08DEA500E203C5 /* ViewController.m in Sources */,
 				DCE5C4921E08DEA500E203C5 /* AppDelegate.m in Sources */,
+				DC26202F1E0916A300B578F0 /* Summoner1.m in Sources */,
 				DCE5C48F1E08DEA500E203C5 /* main.m in Sources */,
+				DC2620321E09178A00B578F0 /* NotifyDataObject.m in Sources */,
+				DC2620351E0918E100B578F0 /* Summoner2.m in Sources */,
+				DC2620381E09194100B578F0 /* Summoner3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +307,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6DN7GZ678J;
 				INFOPLIST_FILE = SubjectObserver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangjie.SubjectObserver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6DN7GZ678J;
 				INFOPLIST_FILE = SubjectObserver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangjie.SubjectObserver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +348,7 @@
 				DCE5C4A31E08DEA500E203C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "BlueBuff.h"
+#import "Summoner1.h"
+#import "Summoner2.h"
+#import "Summoner3.h"
 
 @interface ViewController ()
 
@@ -16,14 +20,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    BlueBuff *buff = [[BlueBuff alloc] init];
+    
+    Summoner1 *_1 = [[Summoner1 alloc] init];
+    [buff registerObserver:_1];
+    Summoner2 *_2 = [[Summoner2 alloc] init];
+    [buff registerObserver:_2];
+    Summoner3 *_3 = [[Summoner3 alloc] init];
+    [buff registerObserver:_3];
+
+    // buff开始对提莫发起攻击
+    [buff attackOn:@"提莫"];
+    
+    // 取消了召唤师3的订阅
+    [buff removeObserver:_3];
+    [buff attackOn:@"提莫"];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end
