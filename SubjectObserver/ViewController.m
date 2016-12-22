@@ -12,6 +12,8 @@
 #import "Summoner2.h"
 #import "Summoner3.h"
 
+#import "LJNSNotificationCenter.h"
+
 @interface ViewController ()
 
 @end
@@ -36,9 +38,22 @@
     // 取消了召唤师3的订阅
     [buff removeObserver:_3];
     [buff attackOn:@"提莫"];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(action:) name:@"LJ" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"LJ" object:self];
+ 
+    [[LJNSNotificationCenter defaultCenter] addObserver:self selector:@selector(ljaction:) name:@"LJ" object:nil];
+    [[LJNSNotificationCenter defaultCenter] postNotificationName:@"LJ" object:self];
 }
 
+- (void)action:(NSNotification *)notification {
+    NSLog(@"系统通知");
+}
 
+- (void)ljaction:(LJNSNotification *)notification {
+    NSLog(@"自定义通知");
+}
 
 
 @end

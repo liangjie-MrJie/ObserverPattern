@@ -12,6 +12,7 @@
 		DC2620321E09178A00B578F0 /* NotifyDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2620311E09178A00B578F0 /* NotifyDataObject.m */; };
 		DC2620351E0918E100B578F0 /* Summoner2.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2620341E0918E100B578F0 /* Summoner2.m */; };
 		DC2620381E09194100B578F0 /* Summoner3.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2620371E09194100B578F0 /* Summoner3.m */; };
+		DCDA7EAB1E0C0AEB00CEFA8B /* LJNSNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCDA7EAA1E0C0AEB00CEFA8B /* LJNSNotificationCenter.m */; };
 		DCE5C48F1E08DEA500E203C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5C48E1E08DEA500E203C5 /* main.m */; };
 		DCE5C4921E08DEA500E203C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5C4911E08DEA500E203C5 /* AppDelegate.m */; };
 		DCE5C4951E08DEA500E203C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE5C4941E08DEA500E203C5 /* ViewController.m */; };
@@ -32,6 +33,8 @@
 		DC2620341E0918E100B578F0 /* Summoner2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summoner2.m; sourceTree = "<group>"; };
 		DC2620361E09194100B578F0 /* Summoner3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Summoner3.h; sourceTree = "<group>"; };
 		DC2620371E09194100B578F0 /* Summoner3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Summoner3.m; sourceTree = "<group>"; };
+		DCDA7EA91E0C0AEB00CEFA8B /* LJNSNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJNSNotificationCenter.h; sourceTree = "<group>"; };
+		DCDA7EAA1E0C0AEB00CEFA8B /* LJNSNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJNSNotificationCenter.m; sourceTree = "<group>"; };
 		DCE5C48A1E08DEA500E203C5 /* SubjectObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubjectObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE5C48E1E08DEA500E203C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCE5C4901E08DEA500E203C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +99,8 @@
 				DCE5C49B1E08DEA500E203C5 /* LaunchScreen.storyboard */,
 				DCE5C49E1E08DEA500E203C5 /* Info.plist */,
 				DCE5C48D1E08DEA500E203C5 /* Supporting Files */,
+				DCDA7EA91E0C0AEB00CEFA8B /* LJNSNotificationCenter.h */,
+				DCDA7EAA1E0C0AEB00CEFA8B /* LJNSNotificationCenter.m */,
 			);
 			path = SubjectObserver;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC26202B1E08E12D00B578F0 /* BlueBuff.m in Sources */,
+				DCDA7EAB1E0C0AEB00CEFA8B /* LJNSNotificationCenter.m in Sources */,
 				DCE5C4951E08DEA500E203C5 /* ViewController.m in Sources */,
 				DCE5C4921E08DEA500E203C5 /* AppDelegate.m in Sources */,
 				DC26202F1E0916A300B578F0 /* Summoner1.m in Sources */,
