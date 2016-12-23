@@ -43,8 +43,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(action:) name:@"ViewController+action" object:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ViewController+action" object:self];
  
-    [[LJNSNotificationCenter defaultCenter] addObserver:self selector:@selector(ljaction:) name:@"ViewController+ljaction" object:nil];
-    [[LJNSNotificationCenter defaultCenter] postNotificationName:@"ViewController+ljaction" object:self];
+    [[LJNSNotificationCenter defaultCenter] addObserver:self selector:@selector(ljaction:) name:@"AppDelegate+ViewController+ljaction" object:nil];
+    [[LJNSNotificationCenter defaultCenter] postNotificationName:@"AppDelegate+ViewController+ljaction" object:self];
 }
 
 - (void)action:(NSNotification *)notification {

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LJNSNotificationCenter.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[LJNSNotificationCenter defaultCenter] addObserver:self selector:@selector(ljaction:) name:@"AppDelegate+ViewController+ljaction" object:nil];
+    
     return YES;
+}
+- (void)ljaction:(LJNSNotification *)notification {
+    NSLog(@"自定义通知!");
 }
 
 

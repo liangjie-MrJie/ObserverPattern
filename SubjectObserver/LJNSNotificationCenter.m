@@ -43,19 +43,28 @@
     ic.aSelector = aSelector;
     ic.anObject = anObject;
     
-    [_mDict setObject:ic forKey:aName];
+    NSMutableArray *mArray = [_mDict objectForKey:aName];
+    if (mArray) {
+        [mArray addObject:ic];
+    }
+    else {
+        mArray = [[NSMutableArray alloc] initWithObjects:ic, nil];
+    }
+    [_mDict setObject:mArray forKey:aName];
 }
 - (void)postNotificationName:(NSNotificationName)aName object:(id)anObject {
-    InteriorClass *ic = [_mDict objectForKey:aName];
-    if (ic.anObject == nil || ic.anObject == anObject) {
-        NSMethodSignature *signature = [anObject methodSignatureForSelector:ic.aSelector];
-        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
-        invocation.target = ic.observer;
-        invocation.selector = ic.aSelector;
-        LJNSNotification *notification = [[LJNSNotification alloc] initWithName:aName object:ic.observer userInfo:0];
-        [invocation setArgument:&notification atIndex:2];
-        [invocation retainArguments];
-        [invocation invoke];
+    NSMutableArray *mArray = [_mDict objectForKey:aName];
+    for (InteriorClass *ic in mArray) {
+        if (ic.anObject == nil || ic.anObject == anObject) {
+            NSMethodSignature *signature = [anObject methodSignatureForSelector:ic.aSelector];
+            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+            invocation.target = ic.observer;
+            invocation.selector = ic.aSelector;
+            LJNSNotification *notification = [[LJNSNotification alloc] initWithName:aName object:ic.observer userInfo:0];
+            [invocation setArgument:&notification atIndex:2];
+            [invocation retainArguments];
+            [invocation invoke];
+        }
     }
 }
 @end
